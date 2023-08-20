@@ -6,8 +6,17 @@
     <title>85-summer-sale</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      .work-sans{
+        font-family: 'Work Sans', sans-serif;
+      }
+    </style>
 </head>
-<body>
+<body class="work-sans">
 <header class="bg-[#F9F6E2]">
     <div class="container mx-auto flex flex-col items-center md:flex-row gap-5 px-4 md:px-8 lg:px-20 py-4">
         <div class="flex-1  space-y-8">
@@ -30,7 +39,7 @@
           <!-- 1st three div  -->
           <div class="grid grid-cols-1 md:grid-cols-3  gap-5">
               <!-- first card  -->
-            <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+            <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3 cursor-pointer">
               <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod1.png" alt="prod1" /></figure>
               <div class="rating mx-auto ">
                   <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
@@ -43,7 +52,7 @@
               <p class="text-sm">39.00 Tk</p>
             </div>
           <!-- second card  -->
-          <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+          <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3 cursor-pointer">
               <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod2.png" alt="prod2" /></figure>
               <div class="rating mx-auto ">
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  checked />
@@ -56,7 +65,7 @@
               <p class="text-sm">25.00 Tk</p>
             </div>
           <!-- third card  -->
-          <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+          <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3 cursor-pointer">
               <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod3.png" alt="prod3" /></figure>
               <div class="rating mx-auto ">
                   <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400"  />
@@ -73,7 +82,7 @@
           <!-- 2nd three div -->
           <div class="grid grid-cols-1 md:grid-cols-3  gap-5">
               <!-- fourth card  -->
-            <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+            <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3 cursor-pointer">
               <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod4.png" alt="prod4" /></figure>
               <div class="rating mx-auto ">
                   <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400"  />
@@ -86,7 +95,7 @@
               <p class="text-sm">49.00 Tk</p>
             </div>
           <!-- fifth card  -->
-          <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+          <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3 cursor-pointer">
               <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod5.png" alt="prod5" /></figure>
               <div class="rating mx-auto ">
                   <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400"  />
@@ -99,7 +108,7 @@
               <p class="text-sm">69.00 Tk</p>
             </div>
           <!-- sixth card  -->
-          <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+          <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3 cursor-pointer">
               <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod6.png" alt="prod6" /></figure>
               <div class="rating mx-auto ">
                   <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"  />
@@ -114,7 +123,7 @@
           </div>
         </div>
         <!-- calculation div  -->
-        <div class=" mx-auto md:w-72 mt-12  ">
+        <div class=" mx-auto md:w-74 mt-12  ">
           <div class="flex flex-col gap-7">
             <div class="form-control bg-white p-3">
               <label class="label">
@@ -122,11 +131,10 @@
               </label>
               <label class="input-group">
                 <input id="cupon-field" type="text" placeholder="Coupon code" class="input input-bordered" />
-                <button disabled id="cupon-btn" class="bg-[#E527B2] text-white disabled:opacity-50 px-2 py-1">Apply</button>
+                <button disabled id="cupon-btn" class="bg-[#E527B2] text-white disabled:opacity-50 px-1 py-1">Apply</button>
               </label>
             </div>
             
-
               <div class="bg-white p-3 space-y-3 ">
                   <div class="text-xl" id="list-item" ></div>
                   <hr>
@@ -134,7 +142,7 @@
                   <h3 class="text-2xl font-medium">Discount: <span id="discount-price">0.00</span> TK</h3>
                   <h3  class="text-2xl font-medium">Total: <span id="grand-total">0.00</span>TK</h3>
                   <hr>
-                  <button disabled id="purchase-btn" class="bg-[#E527B2] text-white px-2 py-1 rounded-md w-64 disabled:opacity-50 relative top-7  left-1" onclick="my_modal_5.showModal()">Make Purchase</button>
+                  <button disabled id="purchase-btn" class="bg-[#E527B2] text-white px-2 py-2 rounded-md w-64 disabled:opacity-50 relative top-7  left-2" onclick="my_modal_5.showModal()">Make Purchase</button>
                   <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box text-center">
                       <img class="mx-auto" src="./images/congo.png" alt="">
