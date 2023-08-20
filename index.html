@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="bg-[#F9F6E2]">
-    <div class="container flex flex-col items-center md:flex-row gap-5 px-4 md:px-8 lg:px-20 py-4">
+    <div class="max-w-screen-xl flex flex-col items-center md:flex-row gap-5 px-4 md:px-8 lg:px-20 py-4">
         <div class="flex-1  space-y-8">
             <p class="text-xl md:text-2xl font-medium ml-16"> ---SALE FEVER--- </p>
             <h2 class="text-3xl  lg:text-4xl font-bold">Purchase TK 200 or <br>above & get <span class="text-[#E527B2]">20% off</span></h2>
@@ -23,13 +23,13 @@
 <!-- main part starts  -->
 
 <main class="mt-12 bg-[#F8F8F8]">
-   <section class="container px-4 md:px-8 lg:px-20 py-4">
+   <section class="max-w-screen-xl px-4 md:px-8 lg:px-20 py-4">
          <!-- flex container  -->
-    <div class="flex flex-col lg:flex-row gap-5">
+    <div class="flex flex-col lg:flex-row gap-8">
         <!-- grid container  -->
         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
             <!-- first card  -->
-            <div class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+            <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
                 <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod1.png" alt="prod1" /></figure>
                 <div class="rating mx-auto ">
                     <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
@@ -39,10 +39,10 @@
                     <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
                   </div>
                 <h2 class="text-sm font-semibold">K. Accessories</h2>
-                <p class="text-sm"><span id="first-card-price">39.00</span> Tk</p>
+                <p class="text-sm">39.00 Tk</p>
               </div>
             <!-- second card  -->
-            <div class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+            <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
                 <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod2.png" alt="prod2" /></figure>
                 <div class="rating mx-auto ">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -51,11 +51,11 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
-                <h2 class="text-sm font-semibold">K. Accessories</h2>
-                <p class="text-sm"><span id="second-card-price">25.00</span> Tk</p>
+                <h2 class="text-sm font-semibold">Wooden Accessories</h2>
+                <p class="text-sm">25.00 Tk</p>
               </div>
             <!-- third card  -->
-            <div class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+            <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
                 <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod3.png" alt="prod3" /></figure>
                 <div class="rating mx-auto ">
                     <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400"  />
@@ -65,10 +65,10 @@
                     <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
                   </div>
                 <h2 class="text-sm font-semibold">Home Cooker</h2>
-                <p class="text-sm"><span id="third-card-price">49.00</span> Tk</p>
+                <p class="text-sm">49.00 Tk</p>
               </div>
             <!-- fourth card  -->
-            <div class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+            <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
                 <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod4.png" alt="prod4" /></figure>
                 <div class="rating mx-auto ">
                     <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400"  />
@@ -78,10 +78,10 @@
                     <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                   </div>
                 <h2 class="text-sm font-semibold">Sports Back Cap</h2>
-                <p class="text-sm"><span id="fourth-card-price">49.00</span> Tk</p>
+                <p class="text-sm">49.00 Tk</p>
               </div>
             <!-- fifth card  -->
-            <div class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+            <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
                 <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod5.png" alt="prod5" /></figure>
                 <div class="rating mx-auto ">
                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400"  />
@@ -91,10 +91,10 @@
                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
                   </div>
                 <h2 class="text-sm font-semibold">Full Jersey Set</h2>
-                <p class="text-sm"><span id="fifth-card-price">69.00</span> Tk</p>
+                <p class="text-sm">69.00 Tk</p>
               </div>
             <!-- sixth card  -->
-            <div class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
+            <div onclick="clickHandler(this)" class=" rounded-lg bg-base-100 shadow-xl text-center space-y-3 p-3">
                 <figure class="bg-[#1111110D]"><img class="mx-auto"  src="./images/prod6.png" alt="prod6" /></figure>
                 <div class="rating mx-auto ">
                     <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"  />
@@ -104,7 +104,7 @@
                     <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
                   </div>
                 <h2 class="text-sm font-semibold">Sports cates</h2>
-                <p class="text-sm"><span id="sixth-card-price">159.00</span> Tk</p>
+                <p class="text-sm">159.00 Tk</p>
               </div>
 
 
@@ -115,17 +115,27 @@
             <div class="flex flex-col gap-10">
                 <div class="bg-white p-3 space-y-3">
                     <h3>Have cupon ?</h3>
-                    <input class="border border-black rounded-md px-2 py-1" type="text" placeholder="Coupon code">
-                    <button id="cupon-btn" class="bg-[#E527B2] text-white px-2 py-1 rounded-md inline-block">Apply</button>
+                    <input id="cupon-field" class="border border-black rounded-md px-2 py-1" type="text" placeholder="Coupon code">
+                    <button disabled id="cupon-btn" class="bg-[#E527B2] text-white px-2 py-1 rounded-md inline-block disabled:opacity-50">Apply</button>
                 </div>
                 <div class="bg-white p-3 space-y-3">
-                     <div></div>
+                    <div id="list-item" ></div>
                     <hr>
-                    <h3 class="text-2xl font-medium">Total Price: <span>00</span> TK</h3>
-                    <h3 class="text-2xl font-medium">Discount: <span>00</span> TK</h3>
-                    <h3 class="text-2xl font-medium">Total: <span>00</span>TK</h3>
+                    <h3 class="text-2xl font-medium">Total Price: <span id="total-price">00</span> TK</h3>
+                    <h3 class="text-2xl font-medium">Discount: <span id="discount-price">00</span> TK</h3>
+                    <h3  class="text-2xl font-medium">Total: <span id="grand-total">00</span>TK</h3>
                     <hr>
-                    <button id="puschase-btn" class="bg-[#E527B2] text-white px-2 py-1 rounded-md w-64">Make Purchase</button>
+                    <button disabled id="purchase-btn" class="bg-[#E527B2] text-white px-2 py-1 rounded-md w-64 disabled:opacity-50 " onclick="my_modal_5.showModal()">Make Purchase</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                      <form method="dialog" class="modal-box text-center">
+                        <img class="mx-auto" src="./images/congo.png" alt="">
+                        <h3 class="font-bold text-3xl">Congratulations</h3>
+                        <p class="py-4">Your Purchase the product</p>
+                        <div class="modal-action">
+                        <button onclick="defaultHandler()" class="mx-auto bg-[#E527B2] text-white px-3 py-2 rounded-md hover:bg-white hover:text-[#E527B2]">Go Home</button>
+                        </div>
+                      </form>
+                    </dialog>
 
                      
                 </div>
