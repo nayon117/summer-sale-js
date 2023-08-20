@@ -1,6 +1,6 @@
 let total = 0;
+const listItems = document.getElementById("list-item");
 function clickHandler(target) {
-    const listItems = document.getElementById("list-item");
     const count = listItems.childElementCount;
     const itemName = target.childNodes[5].innerText;
     const p = document.createElement("p");
@@ -14,7 +14,6 @@ function clickHandler(target) {
     total += parseFloat(price);
     const totalPrice = document.getElementById("total-price");
     totalPrice.innerText = total.toFixed(2);
-
 
     const purchaseBtn = document.getElementById("purchase-btn")
     if (total > 0) {
@@ -44,12 +43,24 @@ cuponBtn.addEventListener('click', function () {
         discountPrice.innerText = discount.toFixed(2);
         const grandTotalPrice = total - discount;
         grandTotal.innerText = grandTotalPrice.toFixed(2);
-         
+        cuponField.value = '';    
     } else {
-        alert("Please provide a valid cupon");
+        alert("Wrong Coupon");
+        cuponField.value = '';
    }
 })
   
 function defaultHandler() {
-    window.location.reload();
+    total = 0;
+    listItems.innerHTML = '';
+    const totalPrice = document.getElementById("total-price");
+    totalPrice.innerText = total.toFixed(2);
+    const discountPrice = document.getElementById("discount-price");
+    discountPrice.innerText = total.toFixed(2);
+    const grandTotal = document.getElementById("grand-total");
+    grandTotal.innerText = total.toFixed(2)
+    const purchaseBtn = document.getElementById("purchase-btn")
+    purchaseBtn.setAttribute("disabled", true);
+    const cuponBtn = document.getElementById("cupon-btn");
+    cuponBtn.setAttribute("disabled", true);
 }
